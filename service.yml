@@ -1,0 +1,93 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Transform: AWS::Serverless-2016-10-31
+
+Description: "[Pipeline] [Utility] Lambda function for managing GitHub deployments via CodePipeline"
+
+Parameters:
+
+  GitHubToken:
+    Type: AWS::SSM::Parameter::Name<String>
+    Description: |
+      The SSM parameter name of the GitHub Token providing
+      deployment access for repositories.
+
+  Environment:
+    Type: String
+    Description: |
+      The name of the environment that this service will include when
+      notifying of deployments.
+
+Resources:
+
+  Table:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: repository
+          AttributeType: S
+        - AttributeName: execution_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: repository
+          KeyType: HASH
+        - AttributeName: execution_id
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      TimeToLiveSpecification:
+        Enabled: true
+        AttributeName: expires
+
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: deployments.handler
+      Description: Triggers on CodePipeline events, sending deployment notifications to GitHub
+      Runtime: nodejs8.10
+      CodeUri: ./out
+      Environment:
+        Variables:
+          GITHUB_TOKEN: !Ref GitHubToken
+          DEPLOYMENTS_TABLE: !Ref Table
+          ENVIRONMENT_NAME: !Ref Environment
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref Table
+        - Statement:
+          - Action:
+              - 'ssm:GetParameters*'
+            Effect: Allow
+            Resource:
+              - !Sub "arn:${AWS::Partition}:ssm:${AWS::Region}:${AWS::AccountId}:parameter${GitHubToken}"
+          - Action:
+              - 'codepipeline:GetPipeline'
+            Effect: Allow
+            Resource:
+              - '*'
+      Events:
+        PipelineExecutionState:
+          Type: CloudWatchEvent
+          Properties:
+            Pattern:
+              region:
+                - !Ref AWS::Region
+              source:
+                - aws.codepipeline
+              detail-type:
+                - CodePipeline Pipeline Execution State Change
+
+  FunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${Function}"
+      RetentionInDays: 1
+
+Outputs:
+
+  Function:
+    Description: CodePipeline Function Name
+    Value: !Ref Function
+    Export:
+      Name: FunctionName

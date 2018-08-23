@@ -1,0 +1,95 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:8
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - run:
+          name: Update NPM
+          command: sudo npm install -g npm@latest
+
+      - restore_cache:
+          keys:
+          - deps-{{ checksum "package.json" }}
+
+      - run:
+          name: Install Dependencies
+          command: npm ci
+
+      - save_cache:
+          paths:
+            - node_modules
+            - node_modules/.bin
+          key: deps-{{ checksum "package.json" }}
+
+      - run:
+          name: Run Test Suite
+          command: npm test -- --ci
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+
+      - run:
+          name: Publish Coverage
+          command: npx codecov
+
+      - store_test_results:
+          path: reports
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - ./
+
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+
+      - run:
+          name: Install AWS CLI
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get -y -qq install python3.4-dev groff-base
+            cd ~ && { curl -O https://bootstrap.pypa.io/get-pip.py ; cd -; }
+            python3.4 ~/get-pip.py --user
+            echo 'export PATH="~/.local/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+            pip install awscli --upgrade --user
+
+      - run:
+          name: Trust GitHub SSH Host
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
+      - run:
+          name: Build Application
+          command: npm run build
+
+      - run:
+          name: Package CloudFormation
+          command: >
+            aws cloudformation package --template-file service.yml --s3-prefix $CIRCLE_SHA1 --s3-bucket $BUCKET --output-template-file packaged.yml
+
+      - run:
+          name: Create GitHub Publish
+          command: npx semantic-release
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - publish:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

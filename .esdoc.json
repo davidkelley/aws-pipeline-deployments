@@ -1,0 +1,23 @@
+{
+  "source": "./functions",
+  "destination": "./docs",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": { "enable": true },
+        "coverage": { "enable": true },
+        "accessor": { "access": ["public", "protected", "private"], "autoPrivate": true },
+        "undocumentIdentifier": { "enable": true },
+        "unexportedIdentifier": { "enable": false },
+        "typeInference": { "enable": true },
+        "test": {
+          "source": "./__tests__",
+          "interfaces": ["describe", "it", "context", "suite", "test"],
+          "includes": ["(test)\\.js$"],
+          "excludes": ["\\.config\\.js$"]
+        }
+      }
+    }
+  ]
+}

@@ -174,7 +174,7 @@ describe('table', () => {
     describe('when a record does not exist', () => {
       const { repository, id } = generator();
 
-      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: [] })));
+      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: null })));
 
       it('return a null value', () => expect(deployment(repository, id)).resolves.toEqual(null));
     });

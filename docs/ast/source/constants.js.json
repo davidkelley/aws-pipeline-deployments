@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 671,
+  "end": 690,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 671,
+    "end": 690,
     "loc": {
       "start": {
         "line": 1,
@@ -291,7 +291,7 @@
       {
         "type": "ExportNamedDeclaration",
         "start": 596,
-        "end": 670,
+        "end": 689,
         "loc": {
           "start": {
             "line": 20,
@@ -299,7 +299,7 @@
           },
           "end": {
             "line": 20,
-            "column": 74
+            "column": 93
           }
         },
         "specifiers": [],
@@ -307,7 +307,7 @@
         "declaration": {
           "type": "VariableDeclaration",
           "start": 603,
-          "end": 670,
+          "end": 689,
           "loc": {
             "start": {
               "line": 20,
@@ -315,14 +315,14 @@
             },
             "end": {
               "line": 20,
-              "column": 74
+              "column": 93
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
               "start": 609,
-              "end": 669,
+              "end": 688,
               "loc": {
                 "start": {
                   "line": 20,
@@ -330,13 +330,13 @@
                 },
                 "end": {
                   "line": 20,
-                  "column": 73
+                  "column": 92
                 }
               },
               "id": {
                 "type": "ObjectPattern",
                 "start": 609,
-                "end": 655,
+                "end": 674,
                 "loc": {
                   "start": {
                     "line": 20,
@@ -344,14 +344,14 @@
                   },
                   "end": {
                     "line": 20,
-                    "column": 59
+                    "column": 78
                   }
                 },
                 "properties": [
                   {
                     "type": "ObjectProperty",
                     "start": 611,
-                    "end": 621,
+                    "end": 628,
                     "loc": {
                       "start": {
                         "line": 20,
@@ -359,7 +359,7 @@
                       },
                       "end": {
                         "line": 20,
-                        "column": 25
+                        "column": 32
                       }
                     },
                     "method": false,
@@ -368,7 +368,7 @@
                     "key": {
                       "type": "Identifier",
                       "start": 611,
-                      "end": 621,
+                      "end": 628,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -376,17 +376,17 @@
                         },
                         "end": {
                           "line": 20,
-                          "column": 25
+                          "column": 32
                         },
-                        "identifierName": "AWS_REGION"
+                        "identifierName": "DEPLOYMENTS_TABLE"
                       },
-                      "name": "AWS_REGION",
+                      "name": "DEPLOYMENTS_TABLE",
                       "leadingComments": null
                     },
                     "value": {
                       "type": "Identifier",
                       "start": 611,
-                      "end": 621,
+                      "end": 628,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -394,11 +394,11 @@
                         },
                         "end": {
                           "line": 20,
-                          "column": 25
+                          "column": 32
                         },
-                        "identifierName": "AWS_REGION"
+                        "identifierName": "DEPLOYMENTS_TABLE"
                       },
-                      "name": "AWS_REGION"
+                      "name": "DEPLOYMENTS_TABLE"
                     },
                     "leadingComments": null,
                     "extra": {
@@ -407,16 +407,16 @@
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 623,
-                    "end": 635,
+                    "start": 630,
+                    "end": 640,
                     "loc": {
                       "start": {
                         "line": 20,
-                        "column": 27
+                        "column": 34
                       },
                       "end": {
                         "line": 20,
-                        "column": 39
+                        "column": 44
                       }
                     },
                     "method": false,
@@ -424,16 +424,71 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 623,
-                      "end": 635,
+                      "start": 630,
+                      "end": 640,
                       "loc": {
                         "start": {
                           "line": 20,
-                          "column": 27
+                          "column": 34
                         },
                         "end": {
                           "line": 20,
-                          "column": 39
+                          "column": 44
+                        },
+                        "identifierName": "AWS_REGION"
+                      },
+                      "name": "AWS_REGION"
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "start": 630,
+                      "end": 640,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 34
+                        },
+                        "end": {
+                          "line": 20,
+                          "column": 44
+                        },
+                        "identifierName": "AWS_REGION"
+                      },
+                      "name": "AWS_REGION"
+                    },
+                    "extra": {
+                      "shorthand": true
+                    }
+                  },
+                  {
+                    "type": "ObjectProperty",
+                    "start": 642,
+                    "end": 654,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 46
+                      },
+                      "end": {
+                        "line": 20,
+                        "column": 58
+                      }
+                    },
+                    "method": false,
+                    "shorthand": true,
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "start": 642,
+                      "end": 654,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 46
+                        },
+                        "end": {
+                          "line": 20,
+                          "column": 58
                         },
                         "identifierName": "GITHUB_TOKEN"
                       },
@@ -441,16 +496,16 @@
                     },
                     "value": {
                       "type": "Identifier",
-                      "start": 623,
-                      "end": 635,
+                      "start": 642,
+                      "end": 654,
                       "loc": {
                         "start": {
                           "line": 20,
-                          "column": 27
+                          "column": 46
                         },
                         "end": {
                           "line": 20,
-                          "column": 39
+                          "column": 58
                         },
                         "identifierName": "GITHUB_TOKEN"
                       },
@@ -462,16 +517,16 @@
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 637,
-                    "end": 653,
+                    "start": 656,
+                    "end": 672,
                     "loc": {
                       "start": {
                         "line": 20,
-                        "column": 41
+                        "column": 60
                       },
                       "end": {
                         "line": 20,
-                        "column": 57
+                        "column": 76
                       }
                     },
                     "method": false,
@@ -479,16 +534,16 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 637,
-                      "end": 653,
+                      "start": 656,
+                      "end": 672,
                       "loc": {
                         "start": {
                           "line": 20,
-                          "column": 41
+                          "column": 60
                         },
                         "end": {
                           "line": 20,
-                          "column": 57
+                          "column": 76
                         },
                         "identifierName": "ENVIRONMENT_NAME"
                       },
@@ -496,16 +551,16 @@
                     },
                     "value": {
                       "type": "Identifier",
-                      "start": 637,
-                      "end": 653,
+                      "start": 656,
+                      "end": 672,
                       "loc": {
                         "start": {
                           "line": 20,
-                          "column": 41
+                          "column": 60
                         },
                         "end": {
                           "line": 20,
-                          "column": 57
+                          "column": 76
                         },
                         "identifierName": "ENVIRONMENT_NAME"
                       },
@@ -520,30 +575,30 @@
               },
               "init": {
                 "type": "MemberExpression",
-                "start": 658,
-                "end": 669,
+                "start": 677,
+                "end": 688,
                 "loc": {
                   "start": {
                     "line": 20,
-                    "column": 62
+                    "column": 81
                   },
                   "end": {
                     "line": 20,
-                    "column": 73
+                    "column": 92
                   }
                 },
                 "object": {
                   "type": "Identifier",
-                  "start": 658,
-                  "end": 665,
+                  "start": 677,
+                  "end": 684,
                   "loc": {
                     "start": {
                       "line": 20,
-                      "column": 62
+                      "column": 81
                     },
                     "end": {
                       "line": 20,
-                      "column": 69
+                      "column": 88
                     },
                     "identifierName": "process"
                   },
@@ -551,16 +606,16 @@
                 },
                 "property": {
                   "type": "Identifier",
-                  "start": 666,
-                  "end": 669,
+                  "start": 685,
+                  "end": 688,
                   "loc": {
                     "start": {
                       "line": 20,
-                      "column": 70
+                      "column": 89
                     },
                     "end": {
                       "line": 20,
-                      "column": 73
+                      "column": 92
                     },
                     "identifierName": "env"
                   },
@@ -1093,9 +1148,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "AWS_REGION",
+      "value": "DEPLOYMENTS_TABLE",
       "start": 611,
-      "end": 621,
+      "end": 628,
       "loc": {
         "start": {
           "line": 20,
@@ -1103,7 +1158,7 @@
         },
         "end": {
           "line": 20,
-          "column": 25
+          "column": 32
         }
       }
     },
@@ -1120,16 +1175,68 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 621,
-      "end": 622,
+      "start": 628,
+      "end": 629,
       "loc": {
         "start": {
           "line": 20,
-          "column": 25
+          "column": 32
         },
         "end": {
           "line": 20,
-          "column": 26
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "AWS_REGION",
+      "start": 630,
+      "end": 640,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 34
+        },
+        "end": {
+          "line": 20,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 640,
+      "end": 641,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 44
+        },
+        "end": {
+          "line": 20,
+          "column": 45
         }
       }
     },
@@ -1146,16 +1253,16 @@
         "binop": null
       },
       "value": "GITHUB_TOKEN",
-      "start": 623,
-      "end": 635,
+      "start": 642,
+      "end": 654,
       "loc": {
         "start": {
           "line": 20,
-          "column": 27
+          "column": 46
         },
         "end": {
           "line": 20,
-          "column": 39
+          "column": 58
         }
       }
     },
@@ -1172,16 +1279,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 635,
-      "end": 636,
+      "start": 654,
+      "end": 655,
       "loc": {
         "start": {
           "line": 20,
-          "column": 39
+          "column": 58
         },
         "end": {
           "line": 20,
-          "column": 40
+          "column": 59
         }
       }
     },
@@ -1198,16 +1305,16 @@
         "binop": null
       },
       "value": "ENVIRONMENT_NAME",
-      "start": 637,
-      "end": 653,
+      "start": 656,
+      "end": 672,
       "loc": {
         "start": {
           "line": 20,
-          "column": 41
+          "column": 60
         },
         "end": {
           "line": 20,
-          "column": 57
+          "column": 76
         }
       }
     },
@@ -1223,16 +1330,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 654,
-      "end": 655,
+      "start": 673,
+      "end": 674,
       "loc": {
         "start": {
           "line": 20,
-          "column": 58
+          "column": 77
         },
         "end": {
           "line": 20,
-          "column": 59
+          "column": 78
         }
       }
     },
@@ -1250,16 +1357,16 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 656,
-      "end": 657,
+      "start": 675,
+      "end": 676,
       "loc": {
         "start": {
           "line": 20,
-          "column": 60
+          "column": 79
         },
         "end": {
           "line": 20,
-          "column": 61
+          "column": 80
         }
       }
     },
@@ -1276,16 +1383,16 @@
         "binop": null
       },
       "value": "process",
-      "start": 658,
-      "end": 665,
+      "start": 677,
+      "end": 684,
       "loc": {
         "start": {
           "line": 20,
-          "column": 62
+          "column": 81
         },
         "end": {
           "line": 20,
-          "column": 69
+          "column": 88
         }
       }
     },
@@ -1302,16 +1409,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 665,
-      "end": 666,
+      "start": 684,
+      "end": 685,
       "loc": {
         "start": {
           "line": 20,
-          "column": 69
+          "column": 88
         },
         "end": {
           "line": 20,
-          "column": 70
+          "column": 89
         }
       }
     },
@@ -1328,16 +1435,16 @@
         "binop": null
       },
       "value": "env",
-      "start": 666,
-      "end": 669,
+      "start": 685,
+      "end": 688,
       "loc": {
         "start": {
           "line": 20,
-          "column": 70
+          "column": 89
         },
         "end": {
           "line": 20,
-          "column": 73
+          "column": 92
         }
       }
     },
@@ -1354,16 +1461,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 669,
-      "end": 670,
+      "start": 688,
+      "end": 689,
       "loc": {
         "start": {
           "line": 20,
-          "column": 73
+          "column": 92
         },
         "end": {
           "line": 20,
-          "column": 74
+          "column": 93
         }
       }
     },
@@ -1380,8 +1487,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 671,
-      "end": 671,
+      "start": 690,
+      "end": 690,
       "loc": {
         "start": {
           "line": 21,

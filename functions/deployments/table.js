@@ -37,8 +37,10 @@ export const get = (repository, id) =>
   });
 
 export const deployment = async (...args) => {
-  const {
-    Items: [{ [DEPLOYMENT_ID]: id = null } = {}],
-  } = await get(...args);
-  return id;
+  const { Items } = await get(...args);
+  if (Items) {
+    const [{ [DEPLOYMENT_ID]: id = null }] = Items;
+    return id;
+  }
+  return null;
 };

@@ -60,9 +60,9 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
-    "pipeline-transfer/functions/constants.js~aws_region",
-    "variable/index.html#static-variable-AWS_REGION",
-    "<span>AWS_REGION</span> <span class=\"search-result-import-path\">pipeline-transfer/functions/constants.js</span>",
+    "pipeline-transfer/functions/constants.js~deployments_table",
+    "variable/index.html#static-variable-DEPLOYMENTS_TABLE",
+    "<span>DEPLOYMENTS_TABLE</span> <span class=\"search-result-import-path\">pipeline-transfer/functions/constants.js</span>",
     "variable"
   ],
   [

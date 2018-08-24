@@ -17,4 +17,4 @@ export const LOG_LEVEL = process.env.LOG_LEVEL || 'info';
  *
  * @type {String}
  */
-export const { AWS_REGION, GITHUB_TOKEN, ENVIRONMENT_NAME } = process.env;
+export const { DEPLOYMENTS_TABLE, AWS_REGION, GITHUB_TOKEN, ENVIRONMENT_NAME } = process.env;

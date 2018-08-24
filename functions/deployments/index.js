@@ -1,5 +1,5 @@
 import sources from './sources';
-import notify from './notify';
+import states from './states';
 
 const EXECUTION_ID = 'execution-id';
 
@@ -26,8 +26,7 @@ const EXECUTION_ID = 'execution-id';
 export const handler = async ({
   detail: { pipeline, version, state, [EXECUTION_ID]: executionId },
 }) =>
-  notify({
-    state,
+  states[state]({
     executionId,
     repositories: await sources({ name: pipeline, version }),
   });

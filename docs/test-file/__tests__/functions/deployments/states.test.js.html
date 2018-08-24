@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">__tests__/functions/deployments/states.test.js | pipeline-transfer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LOG_LEVEL">LOG_LEVEL</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#deployments">deployments</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-handler">handler</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sources">sources</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">__tests__/functions/deployments/states.test.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import faker from &apos;faker&apos;;
+import nock from &apos;nock&apos;;
+import { withParameters } from &apos;@aerofer/utils&apos;;
+
+import { deployment } from &apos;@functions/deployments/table&apos;;
+import states from &apos;@functions/deployments/states&apos;;
+
+const { ENVIRONMENT_NAME, GITHUB_TOKEN } = process.env;
+
+jest.mock(&apos;@aerofer/utils&apos;);
+
+jest.mock(
+  &apos;@functions/deployments/table&apos;,
+  () =&gt; require(&apos;./__mocks__/table&apos;) // eslint-disable-line global-require
+);
+
+const STATUSES = {
+  CANCELED: &apos;error&apos;,
+  FAILED: &apos;failure&apos;,
+  RESUMED: &apos;pending&apos;,
+  STARTED: &apos;pending&apos;,
+  SUCCEEDED: &apos;success&apos;,
+  SUPERCEDED: &apos;pending&apos;,
+};
+
+describe(&apos;states&apos;, () =&gt; {
+  const repository = () =&gt; ({
+    name: `${faker.internet.userName()}/${faker.random.uuid()}`,
+    branch: faker.random.arrayElement([&apos;dev&apos;, &apos;staging&apos;, &apos;master&apos;]),
+  });
+
+  let executionId;
+
+  let githubToken;
+
+  beforeEach(() =&gt; {
+    executionId = faker.random.uuid();
+    githubToken = faker.random.uuid();
+  });
+
+  beforeEach(() =&gt; {
+    withParameters.parameters = { [GITHUB_TOKEN]: githubToken };
+  });
+
+  afterEach(() =&gt; {
+    expect(deployment).toHaveBeenCalledTimes(1);
+  });
+
+  afterEach(() =&gt; {
+    deployment.mockClear();
+  });
+
+  Object.keys(states).forEach(state =&gt; {
+    describe(`Pipeline state &quot;${state}&quot;`, () =&gt; {
+      const { [state]: fn } = states;
+
+      let repositories;
+
+      let deploymentId;
+
+      let github;
+
+      beforeEach(() =&gt; {
+        deploymentId = faker.random.uuid();
+      });
+
+      beforeEach(() =&gt; {
+        repositories = [repository()];
+      });
+
+      describe(&apos;when a deployment does not exist&apos;, () =&gt; {
+        beforeEach(() =&gt; {
+          const [{ name, branch: ref }] = repositories;
+          github = nock(&apos;https://api.github.com&apos;)
+            .matchHeader(&apos;Authorization&apos;, `token ${githubToken}`)
+            .post(`/repos/${name}/deployments`, { ref, environment: ENVIRONMENT_NAME })
+            .reply(200, { id: deploymentId })
+            .matchHeader(&apos;Authorization&apos;, `token ${githubToken}`)
+            .post(`/repos/${name}/deployments/${deploymentId}/statuses`, { state: STATUSES[state] })
+            .reply(200, &apos;&apos;);
+        });
+
+        beforeEach(() =&gt; {
+          deployment.data = null;
+        });
+
+        it(&apos;creates and updates the status of a deployment&apos;, () =&gt;
+          expect(fn({ executionId, repositories })).resolves.toEqual(
+            expect.arrayContaining([deploymentId])
+          ));
+
+        afterEach(() =&gt; {
+          const [{ name }] = repositories;
+          expect(deployment).toHaveBeenCalledWith(name, executionId);
+        });
+
+        afterEach(() =&gt; {
+          expect(github.isDone()).toBe(true);
+        });
+      });
+
+      describe(&apos;when a deployment already exists&apos;, () =&gt; {
+        beforeEach(() =&gt; {
+          const [{ name }] = repositories;
+          github = nock(&apos;https://api.github.com&apos;)
+            .matchHeader(&apos;Authorization&apos;, `token ${githubToken}`)
+            .post(`/repos/${name}/deployments/${deploymentId}/statuses`, { state: STATUSES[state] })
+            .reply(200, &apos;&apos;);
+        });
+
+        beforeEach(() =&gt; {
+          deployment.data = deploymentId;
+        });
+
+        it(&apos;updates the status of the deployment&apos;, () =&gt;
+          expect(fn({ executionId, repositories })).resolves.toEqual(
+            expect.arrayContaining([deploymentId])
+          ));
+
+        afterEach(() =&gt; {
+          const [{ name }] = repositories;
+          expect(deployment).toHaveBeenCalledWith(name, executionId);
+        });
+
+        afterEach(() =&gt; {
+          expect(github.isDone()).toBe(true);
+        });
+      });
+    });
+  });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

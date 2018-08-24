@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">__tests__/functions/deployments/table.test.js | pipeline-transfer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-LOG_LEVEL">LOG_LEVEL</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#deployments">deployments</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-handler">handler</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sources">sources</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">__tests__/functions/deployments/table.test.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import AWS from &apos;aws-sdk-mock&apos;;
+import faker from &apos;faker&apos;;
+
+import { save, get, deployment } from &apos;@functions/deployments/table&apos;;
+
+jest.unmock(&apos;@functions/deployments/table&apos;);
+
+describe(&apos;table&apos;, () =&gt; {
+  const generator = () =&gt; ({
+    deployment: faker.random.uuid(),
+    repository: `${faker.internet.userName}/${faker.random.word()}`,
+    id: faker.random.uuid(),
+  });
+
+  afterEach(() =&gt; AWS.restore());
+
+  describe(&apos;#save&apos;, () =&gt; {
+    const mockPut = jest.fn();
+
+    beforeEach(() =&gt; {
+      AWS.mock(&apos;DynamoDB.DocumentClient&apos;, &apos;put&apos;, mockPut);
+    });
+
+    afterEach(() =&gt; {
+      expect(mockPut).toHaveBeenCalledTimes(1);
+    });
+
+    afterEach(() =&gt; {
+      mockPut.mockClear();
+    });
+
+    expect(save).toEqual(expect.any(Function));
+
+    describe(&apos;when the request is valid&apos;, () =&gt; {
+      const { deployment: deploymentId, repository, id } = generator();
+
+      beforeEach(() =&gt; mockPut.mockImplementationOnce((_, cb) =&gt; cb(null, {})));
+
+      it(&apos;executes successfully&apos;, () =&gt;
+        expect(save(repository, id, deploymentId)).resolves.toEqual({}));
+
+      afterEach(() =&gt; {
+        expect(mockPut).toHaveBeenCalledWith(
+          expect.objectContaining({
+            Item: {
+              repository,
+              execution_id: id,
+              deployment_id: deploymentId,
+              expires: expect.any(Number),
+            },
+          }),
+          expect.any(Function)
+        );
+      });
+    });
+  });
+
+  describe(&apos;#get&apos;, () =&gt; {
+    const mockGet = jest.fn();
+
+    beforeEach(() =&gt; {
+      AWS.mock(&apos;DynamoDB.DocumentClient&apos;, &apos;get&apos;, mockGet);
+    });
+
+    afterEach(() =&gt; {
+      expect(mockGet).toHaveBeenCalledTimes(1);
+    });
+
+    afterEach(() =&gt; {
+      mockGet.mockClear();
+    });
+
+    expect(get).toEqual(expect.any(Function));
+
+    describe(&apos;when a record exists&apos;, () =&gt; {
+      const { deployment: deploymentId, repository, id } = generator();
+
+      let record;
+
+      beforeEach(() =&gt; {
+        record = {
+          repository,
+          execution_id: id,
+          deployment_id: deploymentId,
+          expires: expect.any(Number),
+        };
+      });
+
+      beforeEach(() =&gt; mockGet.mockImplementationOnce((_, cb) =&gt; cb(null, { Items: [record] })));
+
+      it(&apos;retrieves the record successfully&apos;, () =&gt;
+        expect(get(repository, id)).resolves.toEqual(
+          expect.objectContaining({
+            Items: expect.arrayContaining([record]),
+          })
+        ));
+
+      afterEach(() =&gt; {
+        expect(mockGet).toHaveBeenCalledWith(
+          expect.objectContaining({
+            Key: {
+              repository,
+              execution_id: id,
+            },
+          }),
+          expect.any(Function)
+        );
+      });
+    });
+
+    describe(&apos;when a record does not exist&apos;, () =&gt; {
+      const { repository, id } = generator();
+
+      beforeEach(() =&gt; mockGet.mockImplementationOnce((_, cb) =&gt; cb(null, { Items: [] })));
+
+      it(&apos;retrieves the record successfully&apos;, () =&gt;
+        expect(get(repository, id)).resolves.toEqual(
+          expect.objectContaining({
+            Items: [],
+          })
+        ));
+
+      afterEach(() =&gt; {
+        expect(mockGet).toHaveBeenCalledWith(
+          expect.objectContaining({
+            Key: {
+              repository,
+              execution_id: id,
+            },
+          }),
+          expect.any(Function)
+        );
+      });
+    });
+  });
+
+  describe(&apos;#deployment&apos;, () =&gt; {
+    const mockGet = jest.fn();
+
+    beforeEach(() =&gt; {
+      AWS.mock(&apos;DynamoDB.DocumentClient&apos;, &apos;get&apos;, mockGet);
+    });
+
+    afterEach(() =&gt; {
+      expect(mockGet).toHaveBeenCalledTimes(1);
+    });
+
+    afterEach(() =&gt; {
+      mockGet.mockClear();
+    });
+
+    expect(deployment).toEqual(expect.any(Function));
+
+    describe(&apos;when a record exists&apos;, () =&gt; {
+      const { deployment: deploymentId, repository, id } = generator();
+
+      let record;
+
+      beforeEach(() =&gt; {
+        record = {
+          repository,
+          execution_id: id,
+          deployment_id: deploymentId,
+          expires: expect.any(Number),
+        };
+      });
+
+      beforeEach(() =&gt; mockGet.mockImplementationOnce((_, cb) =&gt; cb(null, { Items: [record] })));
+
+      it(&apos;retrieves the record successfully&apos;, () =&gt;
+        expect(deployment(repository, id)).resolves.toEqual(deploymentId));
+    });
+
+    describe(&apos;when a record does not exist&apos;, () =&gt; {
+      const { repository, id } = generator();
+
+      beforeEach(() =&gt; mockGet.mockImplementationOnce((_, cb) =&gt; cb(null, { Items: [] })));
+
+      it(&apos;return a null value&apos;, () =&gt; expect(deployment(repository, id)).resolves.toEqual(null));
+    });
+  });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

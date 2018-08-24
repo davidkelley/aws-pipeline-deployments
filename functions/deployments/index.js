@@ -4,6 +4,14 @@ import states from './states';
 const EXECUTION_ID = 'execution-id';
 
 /**
+ * Main handler for the Lambda function. CodePipeline related CloudWatch Events
+ * are passed to this handler for execution.
+ *
+ * @see https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#codepipeline_event_type
+ * @see https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html
+ *
+ * @example CloudWatch CodePipeline Event sample
+ * ```
  * {
  *   "version": "0",
  *   "id": "CWE-event-id",
@@ -22,6 +30,7 @@ const EXECUTION_ID = 'execution-id';
  *     "execution-id": "01234567-0123-0123-0123-012345678901"
  *   }
  * }
+ * ```
  */
 export const handler = async ({
   detail: { pipeline, version, state, [EXECUTION_ID]: executionId },

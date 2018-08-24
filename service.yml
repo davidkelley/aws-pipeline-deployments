@@ -83,11 +83,3 @@ Resources:
     Properties:
       LogGroupName: !Sub "/aws/lambda/${Function}"
       RetentionInDays: 1
-
-Outputs:
-
-  Function:
-    Description: CodePipeline Function Name
-    Value: !Ref Function
-    Export:
-      Name: FunctionName

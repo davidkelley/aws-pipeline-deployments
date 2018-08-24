@@ -1,0 +1,1384 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "functions/.external-ecmascript.js",
+    "static": true,
+    "longname": "functions/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "functions/constants.js",
+    "content": "/**\n * Determines the level of logging that the function will output. This enables\n * us to reduce the amount of \"noise\" generated by a battle-tested function,\n * whilst enabling us to output additional logging on a new version.\n *\n * Setting `process.env.LOG_LEVEL` will overwrite the default value of `\"info\"`\n * for this variable.\n *\n * @type {String}\n */\nexport const LOG_LEVEL = process.env.LOG_LEVEL || 'info';\n\n/**\n * The AWS Region that this Lambda function is currently executing in.\n *\n * _Note: This is normally populated by the Lambda execution environment._\n *\n * @type {String}\n */\nexport const { AWS_REGION, GITHUB_TOKEN, ENVIRONMENT_NAME } = process.env;\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/functions/constants.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "LOG_LEVEL",
+    "memberof": "functions/constants.js",
+    "static": true,
+    "longname": "functions/constants.js~LOG_LEVEL",
+    "access": "public",
+    "export": true,
+    "importPath": "pipeline-transfer/functions/constants.js",
+    "importStyle": "{LOG_LEVEL}",
+    "description": "Determines the level of logging that the function will output. This enables\nus to reduce the amount of \"noise\" generated by a battle-tested function,\nwhilst enabling us to output additional logging on a new version.\n\nSetting `process.env.LOG_LEVEL` will overwrite the default value of `\"info\"`\nfor this variable.",
+    "lineNumber": 11,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "AWS_REGION",
+    "memberof": "functions/constants.js",
+    "static": true,
+    "longname": "functions/constants.js~AWS_REGION",
+    "access": "public",
+    "export": true,
+    "importPath": "pipeline-transfer/functions/constants.js",
+    "importStyle": "{AWS_REGION}",
+    "description": "The AWS Region that this Lambda function is currently executing in.\n\n_Note: This is normally populated by the Lambda execution environment._",
+    "lineNumber": 20,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "functions/deployments/index.js",
+    "content": "import sources from './sources';\nimport states from './states';\n\nconst EXECUTION_ID = 'execution-id';\n\n/**\n * Main handler for the Lambda function. CodePipeline related CloudWatch Events\n * are passed to this handler for execution.\n *\n * @see https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#codepipeline_event_type\n * @see https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html\n *\n * @example CloudWatch CodePipeline Event sample\n * ```\n * {\n *   \"version\": \"0\",\n *   \"id\": \"CWE-event-id\",\n *   \"detail-type\": \"CodePipeline Pipeline Execution State Change\",\n *   \"source\": \"aws.codepipeline\",\n *   \"account\": \"123456789012\",\n *   \"time\": \"2017-04-22T03:31:47Z\",\n *   \"region\": \"us-east-1\",\n *   \"resources\": [\n *     \"arn:aws:codepipeline:us-east-1:123456789012:pipeline:myPipeline\"\n *   ],\n *   \"detail\": {\n *     \"pipeline\": \"myPipeline\",\n *     \"version\": \"1\",\n *     \"state\": \"STARTED\",\n *     \"execution-id\": \"01234567-0123-0123-0123-012345678901\"\n *   }\n * }\n * ```\n */\nexport const handler = async ({\n  detail: { pipeline, version, state, [EXECUTION_ID]: executionId },\n}) =>\n  states[state]({\n    executionId,\n    repositories: await sources({ name: pipeline, version }),\n  });\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/functions/deployments/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "EXECUTION_ID",
+    "memberof": "functions/deployments/index.js",
+    "static": true,
+    "longname": "functions/deployments/index.js~EXECUTION_ID",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "handler",
+    "memberof": "functions/deployments/index.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "functions/deployments/index.js~handler",
+    "access": "public",
+    "export": true,
+    "importPath": "pipeline-transfer/functions/deployments/index.js",
+    "importStyle": "{handler}",
+    "description": "Main handler for the Lambda function. CodePipeline related CloudWatch Events\nare passed to this handler for execution.",
+    "examples": [
+      "CloudWatch CodePipeline Event sample\n```\n{\n  \"version\": \"0\",\n  \"id\": \"CWE-event-id\",\n  \"detail-type\": \"CodePipeline Pipeline Execution State Change\",\n  \"source\": \"aws.codepipeline\",\n  \"account\": \"123456789012\",\n  \"time\": \"2017-04-22T03:31:47Z\",\n  \"region\": \"us-east-1\",\n  \"resources\": [\n    \"arn:aws:codepipeline:us-east-1:123456789012:pipeline:myPipeline\"\n  ],\n  \"detail\": {\n    \"pipeline\": \"myPipeline\",\n    \"version\": \"1\",\n    \"state\": \"STARTED\",\n    \"execution-id\": \"01234567-0123-0123-0123-012345678901\"\n  }\n}\n```"
+    ],
+    "see": [
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#codepipeline_event_type",
+      "https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html"
+    ],
+    "lineNumber": 35,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"detail\": *}"
+        ],
+        "defaultRaw": {
+          "detail": null
+        },
+        "defaultValue": "{\"detail\":null}"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "functions/deployments/sources.js",
+    "content": "import { CodePipeline } from 'aws-sdk';\n\nimport { AWS_REGION as region } from '../constants';\n\nconst GITHUB = 'GitHub';\n\nconst sources = ({ stages }) =>\n  stages\n    .map(({ actions }) => actions)\n    .reduce((arr, el) => [...el, ...arr], [])\n    .filter(({ actionTypeId: { provider } }) => provider === GITHUB)\n    .map(({ configuration: { Owner: owner, Repo: repo, Branch: branch } }) => ({\n      name: `${owner}/${repo}`,\n      owner,\n      repo,\n      branch,\n    }));\n\nexport default async params => {\n  const codepipeline = new CodePipeline({ region });\n  const { pipeline } = await codepipeline.getPipeline(params).promise();\n  return sources(pipeline);\n};\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/functions/deployments/sources.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "GITHUB",
+    "memberof": "functions/deployments/sources.js",
+    "static": true,
+    "longname": "functions/deployments/sources.js~GITHUB",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/sources.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "sources",
+    "memberof": "functions/deployments/sources.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/deployments/sources.js~sources",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/sources.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"stages\": *}"
+        ],
+        "defaultRaw": {
+          "stages": null
+        },
+        "defaultValue": "{\"stages\":null}"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "sources",
+    "memberof": "functions/deployments/sources.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "functions/deployments/sources.js~sources",
+    "access": "public",
+    "export": true,
+    "importPath": "pipeline-transfer/functions/deployments/sources.js",
+    "importStyle": "sources",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "params",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "functions/deployments/states.js",
+    "content": "import needle from 'needle';\nimport { withParameters } from '@aerofer/utils';\n\nimport { save, deployment } from './table';\n\nimport { GITHUB_TOKEN, ENVIRONMENT_NAME } from '../constants';\n\nconst ALIAS = 'GITHUB_TOKEN';\n\nconst push = ({ [ALIAS]: token }, url, body) => {\n  const opts = { json: true, headers: { Authorization: `token ${token}` } };\n  return needle('post', url, body, opts);\n};\n\nconst request = withParameters({ [ALIAS]: GITHUB_TOKEN })(push);\n\nconst findOrCreate = async ({ executionId, name, branch }) => {\n  const id = await deployment(name, executionId);\n  if (!id) {\n    const {\n      body: { id: deploymentId },\n    } = await request(`https://api.github.com/repos/${name}/deployments`, {\n      environment: ENVIRONMENT_NAME,\n      ref: branch,\n    });\n    await save(name, executionId, deploymentId);\n    return deploymentId;\n  }\n  return id;\n};\n\nconst status = state => ({ executionId, repositories: repos }) =>\n  Promise.all(\n    repos.map(async ({ name, branch }) => {\n      const id = await findOrCreate({ name, branch, executionId });\n      const url = `https://api.github.com/repos/${name}/deployments/${id}/statuses`;\n      await request(url, { state });\n      return id;\n    })\n  );\n\nexport default {\n  CANCELED: status('error'),\n  FAILED: status('failure'),\n  RESUMED: status('pending'),\n  STARTED: status('pending'),\n  SUCCEEDED: status('success'),\n  SUPERCEDED: status('pending'),\n};\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/functions/deployments/states.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "ALIAS",
+    "memberof": "functions/deployments/states.js",
+    "static": true,
+    "longname": "functions/deployments/states.js~ALIAS",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/states.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "push",
+    "memberof": "functions/deployments/states.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/deployments/states.js~push",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/states.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"ALIAS\": *}"
+        ],
+        "defaultRaw": {
+          "ALIAS": null
+        },
+        "defaultValue": "{\"ALIAS\":null}"
+      },
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "body",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "request",
+    "memberof": "functions/deployments/states.js",
+    "static": true,
+    "longname": "functions/deployments/states.js~request",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/states.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "findOrCreate",
+    "memberof": "functions/deployments/states.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "functions/deployments/states.js~findOrCreate",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/states.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"executionId\": *, \"name\": *, \"branch\": *}"
+        ],
+        "defaultRaw": {
+          "executionId": null,
+          "name": null,
+          "branch": null
+        },
+        "defaultValue": "{\"executionId\":null,\"name\":null,\"branch\":null}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "status",
+    "memberof": "functions/deployments/states.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "functions/deployments/states.js~status",
+    "access": "public",
+    "export": false,
+    "importPath": "pipeline-transfer/functions/deployments/states.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# CodePipeline GitHub Deployments\n\n[![Known Vulnerabilities](https://snyk.io/test/github/davidkelley/aws-pipeline-deployments/badge.svg?targetFile=package.json)](https://snyk.io/test/github/davidkelley/aws-pipeline-deployments?targetFile=package.json) [![Documentation](https://doc.esdoc.org/github.com/davidkelley/aws-pipeline-deployments/badge.svg)](https://doc.esdoc.org/github.com/davidkelley/aws-pipeline-deployments) [![codecov](https://codecov.io/gh/davidkelley/aws-pipeline-deployments/branch/master/graph/badge.svg)](https://codecov.io/gh/davidkelley/aws-pipeline-deployments) [![CircleCI](https://circleci.com/gh/davidkelley/aws-pipeline-deployments/tree/master.svg?style=shield)](https://circleci.com/gh/davidkelley/aws-pipeline-deployments/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/davidkelley/aws-pipeline-deployments.svg)](https://greenkeeper.io/)\n\n[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)\n\n# TODO: Description\n\n# TODO: How to deploy\n",
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"pipeline-transfer\",\n  \"version\": \"0.0.0\",\n  \"private\": true,\n  \"engines\": {\n    \"node\": \">=8.10\"\n  },\n  \"dependencies\": {\n    \"@aerofer/utils\": \"^0.4.4\",\n    \"error\": \"^7.0.2\",\n    \"needle\": \"^2.2.2\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^7.0.0\",\n    \"@commitlint/config-conventional\": \"^7.0.1\",\n    \"aws-sdk\": \"^2.297.0\",\n    \"aws-sdk-mock\": \"~4.1.0\",\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-eslint\": \"^8.2.6\",\n    \"babel-loader\": \"^7.1.5\",\n    \"babel-plugin-module-resolver\": \"^3.1.1\",\n    \"babel-plugin-transform-object-rest-spread\": \"^6.26.0\",\n    \"babel-plugin-transform-runtime\": \"^6.23.0\",\n    \"babel-polyfill\": \"^6.26.0\",\n    \"babel-preset-airbnb\": \"^2.5.3\",\n    \"babel-preset-env\": \"^1.7.0\",\n    \"commitizen\": \"^2.10.1\",\n    \"cz-conventional-changelog\": \"^2.1.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-coverage-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.4.0\",\n    \"eslint-config-airbnb\": \">=17.1\",\n    \"eslint-config-prettier\": \">=3.0\",\n    \"eslint-import-resolver-babel-module\": \"^4.0.0\",\n    \"eslint-plugin-import\": \"^2.14.0\",\n    \"eslint-plugin-jsx-a11y\": \"^6.1.1\",\n    \"eslint-plugin-mocha\": \"^5.2.0\",\n    \"eslint-plugin-prettier\": \">=2.6\",\n    \"eslint-plugin-react\": \"^7.11.1\",\n    \"faker\": \"~4.1.0\",\n    \"husky\": \"^1.0.0-rc.13\",\n    \"jest\": \"^23.5.0\",\n    \"jest-circus\": \"^23.5.0\",\n    \"jest-junit\": \"^5.1.0\",\n    \"nock\": \"^9.6.1\",\n    \"prettier\": \"^1.14.2\",\n    \"semantic-release\": \"^15.9.9\",\n    \"source-map-support\": \"^0.5.9\",\n    \"uglifyjs-webpack-plugin\": \"^1.3.0\",\n    \"webpack\": \"^4.17.0\",\n    \"webpack-cli\": \"^3.1.0\"\n  },\n  \"scripts\": {\n    \"commit\": \"git-cz\",\n    \"commit:lint\": \"commitlint -E HUSKY_GIT_PARAMS\",\n    \"lint\": \"eslint __tests__ functions *.js --cache\",\n    \"build\": \"webpack\",\n    \"build:doc\": \"esdoc\",\n    \"test\": \"jest __tests__/.+/*.test.js  --coverage\",\n    \"prebuild\": \"npm test\",\n    \"pretest\": \"npm run lint\",\n    \"postbuild\": \"npm run build:doc\"\n  },\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"cz-conventional-changelog\"\n    }\n  },\n  \"husky\": {\n    \"hooks\": {\n      \"pre-commit\": \"npm test\",\n      \"commit-msg\": \"commitlint -E HUSKY_GIT_PARAMS\"\n    }\n  },\n  \"greenkeeper\": {\n    \"commitMessages\": {\n      \"initialBadge\": \"docs: :memo: add greenkeeper badge\",\n      \"initialDependencies\": \"chore: :gem: update dependencies\",\n      \"initialBranches\": \"build: :tada: whitelist greenkeeper branches\",\n      \"dependencyUpdate\": \"upgrade: :gem: update ${dependency} to version ${version}\",\n      \"devDependencyUpdate\": \"upgrade: :gem: update ${dependency} to version ${version}\",\n      \"dependencyPin\": \"fix: :bug: pin ${dependency} to ${oldversion}\",\n      \"devDependencyPin\": \"fix: :bug: pin ${dependency} to ${oldversion}\"\n    },\n    \"prTitles\": {\n      \"initialPR\": \"chore: update dependencies to enable greenkeeper\",\n      \"initialPrBadge\": \"chore: add badge to enable greenkeeper\",\n      \"initialPrBadgeOnly\": \"chore: add greenkeeper badge\",\n      \"initialSubgroupPR\": \"chore: update dependencies for ${group}\",\n      \"basicPR\": \"chore: update ${dependency} to the latest\",\n      \"groupPR\": \"chore: update ${dependency} in group ${group} to the latest\"\n    }\n  }\n}\n",
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 64,
+    "kind": "testFile",
+    "name": "__tests__/functions/deployments/sources.test.js",
+    "content": "import AWS from 'aws-sdk-mock';\nimport faker from 'faker';\n\nimport sources from '@functions/deployments/sources';\n\nconst repository = () => ({\n  owner: faker.internet.userName(),\n  repo: faker.random.uuid(),\n  branch: faker.random.arrayElement(['dev', 'staging', 'master']),\n});\n\nconst generator = (actions = []) => ({\n  pipeline: {\n    stages: [{ actions }, { actions: [] }],\n  },\n});\n\ndescribe('#sources', () => {\n  const name = faker.random.uuid();\n\n  const version = faker.random.number();\n\n  const mockGetPipeline = jest.fn();\n\n  beforeEach(() => AWS.mock('CodePipeline', 'getPipeline', mockGetPipeline));\n\n  afterEach(() => AWS.restore());\n\n  afterEach(() => {\n    expect(mockGetPipeline).toHaveBeenCalledTimes(1);\n    expect(mockGetPipeline).toHaveBeenCalledWith(\n      expect.objectContaining({\n        name: expect.any(String),\n        version: expect.any(Number),\n      }),\n      expect.any(Function)\n    );\n  });\n\n  afterEach(() => mockGetPipeline.mockReset());\n\n  describe('when the pipeline exists', () => {\n    let structure;\n\n    beforeEach(() => {\n      mockGetPipeline.mockImplementationOnce((_, cb) => cb(null, structure));\n    });\n\n    describe('when there is a single GitHub source', () => {\n      const { owner, repo, branch } = repository();\n\n      beforeEach(() => {\n        structure = generator([\n          {\n            actionTypeId: {\n              provider: 'GitHub',\n            },\n            configuration: {\n              Owner: owner,\n              Repo: repo,\n              Branch: branch,\n            },\n          },\n        ]);\n      });\n\n      it('extracts the correct source', () =>\n        expect(sources({ name, version })).resolves.toEqual(\n          expect.arrayContaining([\n            expect.objectContaining({\n              owner,\n              repo,\n              branch,\n            }),\n          ])\n        ));\n    });\n\n    describe('when there are multiple GitHub sources', () => {\n      const repos = [repository(), repository()];\n\n      beforeEach(() => {\n        structure = generator(\n          repos.map(({ owner, repo, branch }) => ({\n            actionTypeId: {\n              provider: 'GitHub',\n            },\n            configuration: {\n              Owner: owner,\n              Repo: repo,\n              Branch: branch,\n            },\n          }))\n        );\n      });\n\n      it('extracts the correct source', () =>\n        expect(sources({ name, version })).resolves.toEqual(\n          expect.arrayContaining(repos.map(expect.objectContaining))\n        ));\n    });\n\n    describe('when there are no GitHub sources', () => {\n      beforeEach(() => {\n        structure = generator([]);\n      });\n\n      it('returns an empty array', () => expect(sources({ name, version })).resolves.toEqual([]));\n    });\n  });\n\n  describe('when the pipeline does not exist', () => {\n    const err = new Error(faker.random.words());\n\n    beforeEach(() => mockGetPipeline.mockImplementationOnce((_, cb) => cb(err)));\n\n    it('throws an error', () =>\n      expect(sources({ name, version })).rejects.toEqual(expect.any(Error)));\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/__tests__/functions/deployments/sources.test.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "test",
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "__tests__/functions/deployments/sources.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0",
+    "access": null,
+    "description": "#sources",
+    "lineNumber": 18
+  },
+  {
+    "__docId__": 66,
+    "kind": "test",
+    "name": "describe1",
+    "testId": 1,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1",
+    "access": null,
+    "description": "when the pipeline exists",
+    "lineNumber": 42
+  },
+  {
+    "__docId__": 67,
+    "kind": "test",
+    "name": "describe2",
+    "testId": 2,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe2",
+    "access": null,
+    "description": "when there is a single GitHub source",
+    "lineNumber": 49
+  },
+  {
+    "__docId__": 68,
+    "kind": "test",
+    "name": "it3",
+    "testId": 3,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe2",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe2.it3",
+    "access": null,
+    "description": "extracts the correct source",
+    "lineNumber": 67
+  },
+  {
+    "__docId__": 69,
+    "kind": "test",
+    "name": "describe4",
+    "testId": 4,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe4",
+    "access": null,
+    "description": "when there are multiple GitHub sources",
+    "lineNumber": 79
+  },
+  {
+    "__docId__": 70,
+    "kind": "test",
+    "name": "it5",
+    "testId": 5,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe4",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe4.it5",
+    "access": null,
+    "description": "extracts the correct source",
+    "lineNumber": 97
+  },
+  {
+    "__docId__": 71,
+    "kind": "test",
+    "name": "describe6",
+    "testId": 6,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe6",
+    "access": null,
+    "description": "when there are no GitHub sources",
+    "lineNumber": 103
+  },
+  {
+    "__docId__": 72,
+    "kind": "test",
+    "name": "it7",
+    "testId": 7,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe6",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe1.describe6.it7",
+    "access": null,
+    "description": "returns an empty array",
+    "lineNumber": 108
+  },
+  {
+    "__docId__": 73,
+    "kind": "test",
+    "name": "describe8",
+    "testId": 8,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe8",
+    "access": null,
+    "description": "when the pipeline does not exist",
+    "lineNumber": 112
+  },
+  {
+    "__docId__": 74,
+    "kind": "test",
+    "name": "it9",
+    "testId": 9,
+    "memberof": "__tests__/functions/deployments/sources.test.js~describe0.describe8",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/sources.test.js~describe0.describe8.it9",
+    "access": null,
+    "description": "throws an error",
+    "lineNumber": 117
+  },
+  {
+    "__docId__": 75,
+    "kind": "testFile",
+    "name": "__tests__/functions/deployments/states.test.js",
+    "content": "import faker from 'faker';\nimport nock from 'nock';\nimport { withParameters } from '@aerofer/utils';\n\nimport { deployment } from '@functions/deployments/table';\nimport states from '@functions/deployments/states';\n\nconst { ENVIRONMENT_NAME, GITHUB_TOKEN } = process.env;\n\njest.mock('@aerofer/utils');\n\njest.mock(\n  '@functions/deployments/table',\n  () => require('./__mocks__/table') // eslint-disable-line global-require\n);\n\nconst STATUSES = {\n  CANCELED: 'error',\n  FAILED: 'failure',\n  RESUMED: 'pending',\n  STARTED: 'pending',\n  SUCCEEDED: 'success',\n  SUPERCEDED: 'pending',\n};\n\ndescribe('states', () => {\n  const repository = () => ({\n    name: `${faker.internet.userName()}/${faker.random.uuid()}`,\n    branch: faker.random.arrayElement(['dev', 'staging', 'master']),\n  });\n\n  let executionId;\n\n  let githubToken;\n\n  beforeEach(() => {\n    executionId = faker.random.uuid();\n    githubToken = faker.random.uuid();\n  });\n\n  beforeEach(() => {\n    withParameters.parameters = { [GITHUB_TOKEN]: githubToken };\n  });\n\n  afterEach(() => {\n    expect(deployment).toHaveBeenCalledTimes(1);\n  });\n\n  afterEach(() => {\n    deployment.mockClear();\n  });\n\n  Object.keys(states).forEach(state => {\n    describe(`Pipeline state \"${state}\"`, () => {\n      const { [state]: fn } = states;\n\n      let repositories;\n\n      let deploymentId;\n\n      let github;\n\n      beforeEach(() => {\n        deploymentId = faker.random.uuid();\n      });\n\n      beforeEach(() => {\n        repositories = [repository()];\n      });\n\n      describe('when a deployment does not exist', () => {\n        beforeEach(() => {\n          const [{ name, branch: ref }] = repositories;\n          github = nock('https://api.github.com')\n            .matchHeader('Authorization', `token ${githubToken}`)\n            .post(`/repos/${name}/deployments`, { ref, environment: ENVIRONMENT_NAME })\n            .reply(200, { id: deploymentId })\n            .matchHeader('Authorization', `token ${githubToken}`)\n            .post(`/repos/${name}/deployments/${deploymentId}/statuses`, { state: STATUSES[state] })\n            .reply(200, '');\n        });\n\n        beforeEach(() => {\n          deployment.data = null;\n        });\n\n        it('creates and updates the status of a deployment', () =>\n          expect(fn({ executionId, repositories })).resolves.toEqual(\n            expect.arrayContaining([deploymentId])\n          ));\n\n        afterEach(() => {\n          const [{ name }] = repositories;\n          expect(deployment).toHaveBeenCalledWith(name, executionId);\n        });\n\n        afterEach(() => {\n          expect(github.isDone()).toBe(true);\n        });\n      });\n\n      describe('when a deployment already exists', () => {\n        beforeEach(() => {\n          const [{ name }] = repositories;\n          github = nock('https://api.github.com')\n            .matchHeader('Authorization', `token ${githubToken}`)\n            .post(`/repos/${name}/deployments/${deploymentId}/statuses`, { state: STATUSES[state] })\n            .reply(200, '');\n        });\n\n        beforeEach(() => {\n          deployment.data = deploymentId;\n        });\n\n        it('updates the status of the deployment', () =>\n          expect(fn({ executionId, repositories })).resolves.toEqual(\n            expect.arrayContaining([deploymentId])\n          ));\n\n        afterEach(() => {\n          const [{ name }] = repositories;\n          expect(deployment).toHaveBeenCalledWith(name, executionId);\n        });\n\n        afterEach(() => {\n          expect(github.isDone()).toBe(true);\n        });\n      });\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/__tests__/functions/deployments/states.test.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "test",
+    "name": "describe10",
+    "testId": 10,
+    "memberof": "__tests__/functions/deployments/states.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10",
+    "access": null,
+    "description": "states",
+    "lineNumber": 26
+  },
+  {
+    "__docId__": 77,
+    "kind": "test",
+    "name": "describe11",
+    "testId": 11,
+    "memberof": "__tests__/functions/deployments/states.test.js~describe10",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10.describe11",
+    "access": null,
+    "lineNumber": 54
+  },
+  {
+    "__docId__": 78,
+    "kind": "test",
+    "name": "describe12",
+    "testId": 12,
+    "memberof": "__tests__/functions/deployments/states.test.js~describe10.describe11",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe12",
+    "access": null,
+    "description": "when a deployment does not exist",
+    "lineNumber": 71
+  },
+  {
+    "__docId__": 79,
+    "kind": "test",
+    "name": "it13",
+    "testId": 13,
+    "memberof": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe12",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe12.it13",
+    "access": null,
+    "description": "creates and updates the status of a deployment",
+    "lineNumber": 87
+  },
+  {
+    "__docId__": 80,
+    "kind": "test",
+    "name": "describe14",
+    "testId": 14,
+    "memberof": "__tests__/functions/deployments/states.test.js~describe10.describe11",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe14",
+    "access": null,
+    "description": "when a deployment already exists",
+    "lineNumber": 102
+  },
+  {
+    "__docId__": 81,
+    "kind": "test",
+    "name": "it15",
+    "testId": 15,
+    "memberof": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe14",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/states.test.js~describe10.describe11.describe14.it15",
+    "access": null,
+    "description": "updates the status of the deployment",
+    "lineNumber": 115
+  },
+  {
+    "__docId__": 82,
+    "kind": "testFile",
+    "name": "__tests__/functions/deployments/table.test.js",
+    "content": "import AWS from 'aws-sdk-mock';\nimport faker from 'faker';\n\nimport { save, get, deployment } from '@functions/deployments/table';\n\njest.unmock('@functions/deployments/table');\n\ndescribe('table', () => {\n  const generator = () => ({\n    deployment: faker.random.uuid(),\n    repository: `${faker.internet.userName}/${faker.random.word()}`,\n    id: faker.random.uuid(),\n  });\n\n  afterEach(() => AWS.restore());\n\n  describe('#save', () => {\n    const mockPut = jest.fn();\n\n    beforeEach(() => {\n      AWS.mock('DynamoDB.DocumentClient', 'put', mockPut);\n    });\n\n    afterEach(() => {\n      expect(mockPut).toHaveBeenCalledTimes(1);\n    });\n\n    afterEach(() => {\n      mockPut.mockClear();\n    });\n\n    expect(save).toEqual(expect.any(Function));\n\n    describe('when the request is valid', () => {\n      const { deployment: deploymentId, repository, id } = generator();\n\n      beforeEach(() => mockPut.mockImplementationOnce((_, cb) => cb(null, {})));\n\n      it('executes successfully', () =>\n        expect(save(repository, id, deploymentId)).resolves.toEqual({}));\n\n      afterEach(() => {\n        expect(mockPut).toHaveBeenCalledWith(\n          expect.objectContaining({\n            Item: {\n              repository,\n              execution_id: id,\n              deployment_id: deploymentId,\n              expires: expect.any(Number),\n            },\n          }),\n          expect.any(Function)\n        );\n      });\n    });\n  });\n\n  describe('#get', () => {\n    const mockGet = jest.fn();\n\n    beforeEach(() => {\n      AWS.mock('DynamoDB.DocumentClient', 'get', mockGet);\n    });\n\n    afterEach(() => {\n      expect(mockGet).toHaveBeenCalledTimes(1);\n    });\n\n    afterEach(() => {\n      mockGet.mockClear();\n    });\n\n    expect(get).toEqual(expect.any(Function));\n\n    describe('when a record exists', () => {\n      const { deployment: deploymentId, repository, id } = generator();\n\n      let record;\n\n      beforeEach(() => {\n        record = {\n          repository,\n          execution_id: id,\n          deployment_id: deploymentId,\n          expires: expect.any(Number),\n        };\n      });\n\n      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: [record] })));\n\n      it('retrieves the record successfully', () =>\n        expect(get(repository, id)).resolves.toEqual(\n          expect.objectContaining({\n            Items: expect.arrayContaining([record]),\n          })\n        ));\n\n      afterEach(() => {\n        expect(mockGet).toHaveBeenCalledWith(\n          expect.objectContaining({\n            Key: {\n              repository,\n              execution_id: id,\n            },\n          }),\n          expect.any(Function)\n        );\n      });\n    });\n\n    describe('when a record does not exist', () => {\n      const { repository, id } = generator();\n\n      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: [] })));\n\n      it('retrieves the record successfully', () =>\n        expect(get(repository, id)).resolves.toEqual(\n          expect.objectContaining({\n            Items: [],\n          })\n        ));\n\n      afterEach(() => {\n        expect(mockGet).toHaveBeenCalledWith(\n          expect.objectContaining({\n            Key: {\n              repository,\n              execution_id: id,\n            },\n          }),\n          expect.any(Function)\n        );\n      });\n    });\n  });\n\n  describe('#deployment', () => {\n    const mockGet = jest.fn();\n\n    beforeEach(() => {\n      AWS.mock('DynamoDB.DocumentClient', 'get', mockGet);\n    });\n\n    afterEach(() => {\n      expect(mockGet).toHaveBeenCalledTimes(1);\n    });\n\n    afterEach(() => {\n      mockGet.mockClear();\n    });\n\n    expect(deployment).toEqual(expect.any(Function));\n\n    describe('when a record exists', () => {\n      const { deployment: deploymentId, repository, id } = generator();\n\n      let record;\n\n      beforeEach(() => {\n        record = {\n          repository,\n          execution_id: id,\n          deployment_id: deploymentId,\n          expires: expect.any(Number),\n        };\n      });\n\n      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: [record] })));\n\n      it('retrieves the record successfully', () =>\n        expect(deployment(repository, id)).resolves.toEqual(deploymentId));\n    });\n\n    describe('when a record does not exist', () => {\n      const { repository, id } = generator();\n\n      beforeEach(() => mockGet.mockImplementationOnce((_, cb) => cb(null, { Items: [] })));\n\n      it('return a null value', () => expect(deployment(repository, id)).resolves.toEqual(null));\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/davidk/github.com/davidkelley/aws-pipeline-deployments/__tests__/functions/deployments/table.test.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "test",
+    "name": "describe16",
+    "testId": 16,
+    "memberof": "__tests__/functions/deployments/table.test.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16",
+    "access": null,
+    "description": "table",
+    "lineNumber": 8
+  },
+  {
+    "__docId__": 84,
+    "kind": "test",
+    "name": "describe17",
+    "testId": 17,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe17",
+    "access": null,
+    "description": "#save",
+    "lineNumber": 17
+  },
+  {
+    "__docId__": 85,
+    "kind": "test",
+    "name": "describe18",
+    "testId": 18,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe17",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe17.describe18",
+    "access": null,
+    "description": "when the request is valid",
+    "lineNumber": 34
+  },
+  {
+    "__docId__": 86,
+    "kind": "test",
+    "name": "it19",
+    "testId": 19,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe17.describe18",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe17.describe18.it19",
+    "access": null,
+    "description": "executes successfully",
+    "lineNumber": 39
+  },
+  {
+    "__docId__": 87,
+    "kind": "test",
+    "name": "describe20",
+    "testId": 20,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe20",
+    "access": null,
+    "description": "#get",
+    "lineNumber": 58
+  },
+  {
+    "__docId__": 88,
+    "kind": "test",
+    "name": "describe21",
+    "testId": 21,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe20",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe21",
+    "access": null,
+    "description": "when a record exists",
+    "lineNumber": 75
+  },
+  {
+    "__docId__": 89,
+    "kind": "test",
+    "name": "it22",
+    "testId": 22,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe21",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe21.it22",
+    "access": null,
+    "description": "retrieves the record successfully",
+    "lineNumber": 91
+  },
+  {
+    "__docId__": 90,
+    "kind": "test",
+    "name": "describe23",
+    "testId": 23,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe20",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe23",
+    "access": null,
+    "description": "when a record does not exist",
+    "lineNumber": 111
+  },
+  {
+    "__docId__": 91,
+    "kind": "test",
+    "name": "it24",
+    "testId": 24,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe23",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe20.describe23.it24",
+    "access": null,
+    "description": "retrieves the record successfully",
+    "lineNumber": 116
+  },
+  {
+    "__docId__": 92,
+    "kind": "test",
+    "name": "describe25",
+    "testId": 25,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16",
+    "testDepth": 1,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe25",
+    "access": null,
+    "description": "#deployment",
+    "lineNumber": 137
+  },
+  {
+    "__docId__": 93,
+    "kind": "test",
+    "name": "describe26",
+    "testId": 26,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe25",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe26",
+    "access": null,
+    "description": "when a record exists",
+    "lineNumber": 154
+  },
+  {
+    "__docId__": 94,
+    "kind": "test",
+    "name": "it27",
+    "testId": 27,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe26",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe26.it27",
+    "access": null,
+    "description": "retrieves the record successfully",
+    "lineNumber": 170
+  },
+  {
+    "__docId__": 95,
+    "kind": "test",
+    "name": "describe28",
+    "testId": 28,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe25",
+    "testDepth": 2,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe28",
+    "access": null,
+    "description": "when a record does not exist",
+    "lineNumber": 174
+  },
+  {
+    "__docId__": 96,
+    "kind": "test",
+    "name": "it29",
+    "testId": 29,
+    "memberof": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe28",
+    "testDepth": 3,
+    "static": true,
+    "longname": "__tests__/functions/deployments/table.test.js~describe16.describe25.describe28.it29",
+    "access": null,
+    "description": "return a null value",
+    "lineNumber": 179
+  }
+]

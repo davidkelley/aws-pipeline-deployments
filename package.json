@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/config-conventional": "^8.2.0",
     "aws-sdk": "^2.297.0",
     "aws-sdk-mock": "~4.1.0",
     "babel-cli": "^6.26.0",
